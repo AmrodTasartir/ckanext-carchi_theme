@@ -6,5 +6,21 @@
             <a class="logo pull-left" href="/?locale=es"><img alt="El Carchi logo" src="/img/logo-header.png" style="width:200px;"></a>
           </div>
         </div>
-	{{ super() }}
-{% endblock %}
+    <p>{{ super() }}
+	      {% endblock %} </p>
+    <p>&nbsp;</p>
+     {% block header_site_navigation %}
+        <nav class="section navigation">
+          <ul class="nav nav-pills">
+            {% block header_site_navigation_tabs %}
+              {{ h.build_nav_main(
+                ('search', _('Datasets')),
+                ('organizations_index', _('Organizations')),
+                ('group_index', _('Groups')),
+                ('about', _('About')),
+                ('login', _('Login'))
+              ) }}
+            {% endblock %}
+          </ul>
+        </nav>
+      {% endblock %}
