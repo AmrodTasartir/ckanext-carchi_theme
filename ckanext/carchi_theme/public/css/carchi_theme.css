@@ -277,7 +277,7 @@ footer #copyright .logo img{
 
 @media (min-width: 1200px) {
 	#header_logos {
-		width: 1570px; /*Se cambio de 1170, para que el encabezado pueda ocupar toda la pantalla*/
+		width: 1190px; /*Se cambio de 1170, para que el encabezado pueda ocupar toda la pantalla*/
 	}
 	.homepage .hero > .container .groups {
 		width: 1050px;
